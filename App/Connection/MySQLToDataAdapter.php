@@ -1,10 +1,10 @@
 <?php
 namespace App\Connection;
 
-use App\Interface\IDriver;
+use App\Interface\IDataDriver;
 use App\Interface\IMySQLDriver;
 
-class MySQLToDriverBridge implements IDriver
+class MySQLToDataAdapter implements IDataDriver
 {
 
     protected IMySQLDriver $mySQLDriver;

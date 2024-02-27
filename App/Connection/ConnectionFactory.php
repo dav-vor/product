@@ -1,18 +1,18 @@
 <?php
 namespace App\Connection;
 
-use App\Interface\IDriver;
+use App\Interface\IDataDriver;
 
 class ConnectionFactory
 {
-    public static function getDb(): IDriver
+    public static function getDb(): IDataDriver
     {
         if (Config::getDriverType() === 'mysql'){
-            return new MySQLToDriverBridge();
+            return new MySQLToDataAdapter();
         }
 
         if (Config::getDriverType() === 'elastic'){
-            return new ElasticToDriverBridge();
+            return new ElasticToDataDriverAdapter();
         }
     }
 }

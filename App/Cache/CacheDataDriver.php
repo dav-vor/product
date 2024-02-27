@@ -2,9 +2,9 @@
 
 namespace App\Cache;
 
-use App\Interface\IDriver;
+use App\Interface\IDataDriver;
 
-class CacheDriver implements IDriver
+class CacheDataDriver implements IDataDriver
 {
     const FILE = __DIR__ . '/cache.json';
 

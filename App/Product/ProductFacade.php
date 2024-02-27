@@ -1,20 +1,20 @@
 <?php
 namespace App\Product;
 
-use App\Cache\CacheDriver;
+use App\Cache\CacheDataDriver;
 use App\Connection\ConnectionFactory;
 use App\Utils\Singleton;
-use App\Interface\IDriver;
+use App\Interface\IDataDriver;
 
 class ProductFacade extends Singleton
 {
-    protected IDriver $db;
-    protected IDriver $cache;
+    protected IDataDriver $db;
+    protected IDataDriver $cache;
 
     protected function __construct()
     {
         $this->db = ConnectionFactory::getDb();
-        $this->cache = new CacheDriver();
+        $this->cache = new CacheDataDriver();
     }
 
     public function getProduct(string $id): array

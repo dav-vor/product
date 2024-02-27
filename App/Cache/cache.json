@@ -1,1 +1,1 @@
-{"products":{"1":{"id":"1","product":"product1","source":"mysql"},"2":{"id":"2","product":"product2","source":"mysql"},"3":{"id":"3","product":"product3","source":"elastic"},"5":{"id":"5","product":"product5","source":"elastic"}},"product_requests":{"1":2,"3":4,"5":1}}
+{"products":{"1":{"id":"1","product":"product1","source":"mysql"},"2":{"id":"2","product":"product2","source":"mysql"},"3":{"id":"3","product":"product3","source":"elastic"},"5":{"id":"5","product":"product5","source":"elastic"}},"product_requests":{"1":2,"3":5,"5":1}}

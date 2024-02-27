@@ -1,7 +1,7 @@
 <?php
 namespace App\Interface;
 
-interface IDriver
+interface IDataDriver
 {
     /**
      * @return string[]

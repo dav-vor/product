@@ -1,10 +1,10 @@
 <?php
 namespace App\Connection;
 
-use App\Interface\IDriver;
+use App\Interface\IDataDriver;
 use App\Interface\IElasticSearchDriver;
 
-class ElasticToDriverBridge implements IDriver
+class ElasticToDataDriverAdapter implements IDataDriver
 {
 
     protected IElasticSearchDriver $elasticSearchDriver;
